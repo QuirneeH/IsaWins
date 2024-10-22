@@ -1,0 +1,116 @@
+@charset "UTF-8";
+
+:root {
+    --color-1: #7E56BC;
+    --color-2: #381E5E;
+    --color-3: #9685A7;
+    --color-4: #cf1010;
+    --color-5: #A970FF;
+    --color-6: #000000;
+    --color-7: #ffffff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background: url(/images/background-1.png);
+    background-size: 100%;
+    background-repeat: repeat-y;
+}
+
+section {
+    overflow-y: scroll;
+    border-collapse: collapse;
+    display: flex;
+    justify-content: center;
+}
+
+section::-webkit-scrollbar {
+    display: none;
+}
+
+h1 {
+    margin-top: 0;
+    text-align: center;
+    color: white;
+    text-shadow: 2px 2px 1px var(--color-1);
+    font-size: 38px;
+}
+
+.twitch-link-isa {
+    font-weight: 800;
+    text-shadow: 1.2px 1.2px 1px var(--color-1);
+}
+
+.twitch-link {
+    text-decoration: none;
+}
+
+.twitch-link i {
+    font-size: 1px;
+    color: var(--color-5);
+}
+
+/* TABLE */
+table {
+    width: 60%;
+}
+
+thead {
+    background-color: var(--color-4);
+}
+
+th, td {
+    height: 25px;
+    font-size: 1rem;
+}
+
+thead #th-name {
+    width: 70%;
+}
+
+th #th-champion {
+    width: 30%;
+}
+
+tbody {
+    font-weight: 600;
+}
+
+/* EVEN */
+tbody:nth-child(even) {
+    background-color: var(--color-1);
+    color: var(--color-6);
+}
+
+tbody:nth-child(even) a {
+    color: var(--color-6);
+}
+
+/* ODD */
+tbody:nth-child(odd) {
+    background-color: var(--color-2);
+    color: var(--color-7);
+}
+
+tbody:nth-child(odd) a {
+    color: var(--color-7);
+}
+
+/* HOVER */
+tbody:hover {
+    background-color: var(--color-7);
+    font-weight: 900;
+    letter-spacing: 1px;
+    color: var(--color-6);
+}
+
+tbody:hover .twitch-link i, tbody:hover a {
+    color: var(--color-6);
+}
