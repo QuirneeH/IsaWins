@@ -5,4 +5,15 @@
         background: url(/images/background-2.png);
         background-size: contain;
     }
+
+    table {
+        width: 90%;
+    }
+
+    .twitch-link-isa {
+        color: var(--color-5);
+        font-weight: 800; 
+        text-shadow: .1px .1px 10px var(--color-2);
+        cursor: pointer;
+    }
 }

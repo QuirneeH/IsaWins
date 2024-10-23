@@ -44,8 +44,10 @@ h1 {
 }
 
 .twitch-link-isa {
-    font-weight: 800;
-    text-shadow: 1.2px 1.2px 1px var(--color-1);
+    color: var(--color-5);
+    font-weight: 800; 
+    text-shadow: .1px .1px 10px var(--color-1);
+    cursor: pointer;
 }
 
 .twitch-link {
